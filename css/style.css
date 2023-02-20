@@ -7,3 +7,60 @@
 body { 
     font-family: 'Poppins', sans-serif;
 }
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(3,4,7,0.47), rgba(5,10,30,0.48)),url("https://images5.alphacoders.com/423/423176.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.header-brand span, h1 span {
+    color: rgb(0, 196, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    height: 100vh;
+}
+
+.header-text h1 {
+    font-size: 5rem;
+}
+
+.header-text h2 {
+    font-size: 3rem;
+}
