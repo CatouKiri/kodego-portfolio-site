@@ -13,11 +13,7 @@ body::-webkit-scrollbar {
 }
 
 /* header */
-@media only screen and (max-width: 912px) {
-    .header-text h1 {
-        font-size: 7vw;
-      }
-  }
+
 
 header {
   height: 100vh;
@@ -92,16 +88,21 @@ nav ul li a {
     font-size: 40px;
 }
 
+@media only screen and (max-width: 912px) {
+  .header-text h1 {
+      font-size: 7vw;
+    }
+}
 /* about section */
-.about {
+.about, .contact {
   background-color: #242323;
-  height: 100vh;
   color: white;
   text-align: center;
-  padding-top: 100px;
+  padding: 70px 0;
 }
 
-.about-header {
+.h2-header {
+  text-align: center;
     font-size: 50px;
 }
 
@@ -110,8 +111,9 @@ nav ul li a {
   width: 50%;
 }
 
-.about-text h2 {
+h3 {
   font-weight: 700;
+  font-size: 30px;
 }
 
 .about-text p {
@@ -119,38 +121,91 @@ nav ul li a {
     line-height: 1.8rem;
 }
 
-.about-skills {
+.about-skills, .contact-container {
     display: flex;
-    width: 100%;
-    padding-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .about-skills-container-1, .about-skills-container-2 {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 3rem;
 }
 
-.education, .experience {
+.education, .experience, .skills {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 3rem;
 }
-
-.about-skills h2 {
-    font-size: 30px;
+.education h3, .experience h3, .skills h3 {
+  padding-bottom: 1rem;
 }
 
 .about-skills-h3-1 {
     border-bottom: 3px solid #20E700;
 }
 /* projects section */
+
 .projects {
-    height: 100vh;
-    text-align: center;
-    color: #362D2D;
-    font-size: 2.2vh;
+  color: #362D2D;
+  padding: 70px 0;
+} 
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-card {
+  width: 500px;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.projects-img {
+  width: 100%;
+}
+
+/* contact section */
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 
-/* contact section */
+.contact-wrap {
+  background-color: aqua;
+  margin: auto;
+  width: 70%;
+  padding: 6%;
+}
+
+.contact-name {
+width: 50%;
+text-align: left;
+}
+
+.contact-email {
+  width: 50%;
+  text-align: left;
+}
+.contact-container-2 {
+  text-align: left;
+}
+
+input {
+  width: 100%;
+}
+
+textarea {
+  min-height: 15vh;
+  width: 100%;
+}
+
+.contact-container-1 {
+  display: flex;
+}
 /* footer section */
